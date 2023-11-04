@@ -9,7 +9,7 @@ const defaultProfileImg =
 
 function getPosts() {
   loader.classList.remove("hide");
-  fetch(baseUrl + "/posts" + `?limit=10&page=${currentPage}`)
+  fetch(baseUrl + "/posts" + `?limit=20&page=${currentPage}`)
     .then((res) => res.json())
     .then((data) => {
       loader.classList.add("hide");
